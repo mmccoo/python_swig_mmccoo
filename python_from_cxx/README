@@ -1,0 +1,8 @@
+
+
+This code is based on:
+the swig tutorial here
+http://www.swig.org/tutorial.html
+
+and this stackoverflow answer:
+http://stackoverflow.com/questions/12392703/what-is-the-cleanest-way-to-call-a-python-function-from-c-with-a-swig-wrapped
