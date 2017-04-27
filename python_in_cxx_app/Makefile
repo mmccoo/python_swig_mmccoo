@@ -1,11 +1,13 @@
-CFLAGS+=$(shell python-config --cflags)
-LDFLAGS+=$(shell python-config --ldflags)
+CFLAGS +=$(subst -Wstrict-prototypes,,$(shell python3.5-config --cflags))
+LDFLAGS+=$(subst -Wstrict-prototypes,,$(shell python3.5-config --ldflags))
+
 
 main: main.o
 	g++ -o $@ $? $(LDFLAGS)
 
 %.o: %.cxx
-	@echo hello
 	g++ $(CFLAGS) -fPIC -c $< -o $@ 
 
 
+clean:
+	rm -f *.o main
