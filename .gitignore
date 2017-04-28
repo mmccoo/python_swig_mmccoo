@@ -2,5 +2,7 @@
 **.o
 **.so
 **_wrap.cxx
+**_wrap.hxx
 **.pyc
+**.#*
 basic_python/example.py
