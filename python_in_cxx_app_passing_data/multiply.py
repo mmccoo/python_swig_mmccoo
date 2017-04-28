@@ -5,3 +5,16 @@ def multiply(a,b):
         c = c + b
     return c
 
+class myclass:
+    def __init__(self, value):
+        self.value = value;
+        
+    def getvalue(self):
+        return self.value;
+
+val = 10;
+mc1 = myclass(val);
+
+print("the value is {}".format(mc1.getvalue()))
+
+

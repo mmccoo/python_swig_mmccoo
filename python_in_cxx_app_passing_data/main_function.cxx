@@ -50,7 +50,7 @@ int run_python_stuff(int argc, char *argv[])
         return 1;
     }
     printf("Result of call: %ld\n", PyLong_AsLong(pValue));
-
+    return 0;
 }
 
 int
