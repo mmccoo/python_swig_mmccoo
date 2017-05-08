@@ -14,7 +14,7 @@ example_wrap.cxx: example.i
 	g++ $(CFLAGS) -fPIC -c $< -o $@
 
 clean:
-	rm -f *.o example_wrap.cxx example_wrap.o example.so example.py
+	rm -rf *.o example_wrap.cxx example_wrap.o _example.so example.py __pycache__
 
 test: _example.so
 	python3.5 test.py

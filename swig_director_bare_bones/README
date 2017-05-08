@@ -1,0 +1,11 @@
+
+
+This code is based the code in the swig tutorial:
+http://www.swig.org/tutorial.html
+
+it adds usage of director classes.
+
+Using a director class enables you to use python callbacks from your c code.
+
+You create a cpp class with some virtual methods. If you override any of those methods in
+python, when your cpp code calls the virtual methods, the python override is executed.

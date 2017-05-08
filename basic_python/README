@@ -2,3 +2,5 @@
 
 This code is simply an implementation of the code in the swig tutorial:
 http://www.swig.org/tutorial.html
+
+Why get it from here? Because I've also included a makefile that will work on Ubuntu

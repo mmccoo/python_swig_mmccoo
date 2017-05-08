@@ -11,3 +11,8 @@ main: main.o
 
 clean:
 	rm -f *.o main
+
+# there's not much to the test. The main application initialized the
+# python interpreter and uses it to print the current date/time.
+test:
+	./main

@@ -16,4 +16,4 @@ main_method: main_method.o
 
 
 clean:
-	rm -f *.o main
+	rm -rf *.o main __pycache__ main_method main_function

@@ -14,7 +14,7 @@ ObjWithPyCallback_wrap.cxx: ObjWithPyCallback.i
 	g++ $(CFLAGS) -fPIC -c $< -o $@
 
 clean:
-	rm -f *.o ObjWithPyCallback_wrap.o ObjWithPyCallback_wrap.cxx _cb.so cb.so
+	rm -rf *.o ObjWithPyCallback_wrap.o ObjWithPyCallback_wrap.cxx _cb.so _cb.so cb.py __pycache__ 
 
-test: _example.so
+test: _cb.so
 	python3.5 example.py

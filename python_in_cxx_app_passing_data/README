@@ -1,0 +1,9 @@
+
+
+This directory is a simple example of embedding a python interpreter into a C++ application. It's largely a cut/paste from a couple sources
+
+Basic embedding tutorial on the python website.
+https://docs.python.org/3.5/extending/embedding.html
+
+I use an auto pointer implementation from active state. This is so I can forget about memory leaks
+http://code.activestate.com/recipes/577985-automatic-python-pyobject-ref-count-management-in-/
